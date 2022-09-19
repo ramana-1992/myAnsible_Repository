@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+-  name: install tree
+   apt:
+       name : tree
+       state: present
+
+-  name: install webserver
+   apt:
+      name: webserver
+      state: present
+    
+
