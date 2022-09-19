@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-  - name: install webserver
+  - name: install tree
     apt:
-     name: apache2
+     name: tree
      sate: present
