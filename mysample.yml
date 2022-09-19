@@ -4,4 +4,4 @@
   - name: install tree
     apt:
      name: tree
-     sate: present
+     state: present
