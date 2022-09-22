@@ -4,5 +4,13 @@
   tasks: 
 - name: install tree
   apt: 
-      name: tree
+     name: tree
+     state: present
+- name: install wget
+  apt:
+     name: wget
+     state: present
+- name: install apache2
+  apt:  
+      name: apache2
       state: present
