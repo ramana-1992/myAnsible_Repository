@@ -12,3 +12,7 @@
     apt: 
       name: tree
       state: present
+  - name: i instal RedHat on ubuntu
+    yum:
+       name: httpd
+       state: present
