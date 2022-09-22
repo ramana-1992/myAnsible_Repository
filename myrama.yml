@@ -2,9 +2,9 @@
 - hosts: all
   become: yes
   tasks: 
-- name: install tree
+- name: install git
   apt: 
-     name: tree
+     name: git
      state: present
 - name: install wget
   apt:
@@ -12,5 +12,5 @@
      state: present
 - name: install apache2
   apt:  
-      name: apache2
-      state: present
+     name: apache2
+     state: present
