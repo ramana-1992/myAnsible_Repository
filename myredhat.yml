@@ -10,12 +10,12 @@
   - name: i want to start webserver on ubuntu nodes
     service: 
       name: apache2
-      state: present
+      state: started
     when: ansible_os_family =="Debian"
   - name: insatll webserver on redhat nodes
     yum: 
       name: httpd
-      state: started
+      state: present
     when: ansible_os_family =="RedHat"
   - name: i want start webserver on redhat nodes
     service:
