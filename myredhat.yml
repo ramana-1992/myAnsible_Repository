@@ -4,22 +4,23 @@
   tasks:
   - name: insatll webserver on ubuntu nodes
     apt:
-      name: "{{mywebpackonubuntu}}"
+      name: mywebpackonubuntu
       state: present
     when: ansible_os_family =="Debian"
   - name: i want to start webserver on ubuntu nodes
     service: 
-      name: "{{mywebpackonubuntu}}"
+
+      name: mywebpackonubuntu
       state: started
     when: ansible_os_family =="Debian"
   - name: insatll webserver on redhat nodes
     yum: 
-      name: "{{mywebpackonRedHat}}"
+      name: mywebpackonRedHat
       state: present
     when: ansible_os_family =="RedHat"
   - name: i want start webserver on redhat nodes
     service:
-      name: "{{mywebpackonRedHat}}"
+      name: mywebpackonRedHat
       state: started
     when: ansible_os_family =="RedHat"
  
