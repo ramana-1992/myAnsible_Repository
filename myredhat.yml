@@ -15,11 +15,11 @@
   - name: insatll webserver on redhat nodes
     yum: 
       name: httpd
-      state: present
+      state: started
     when: ansible_os_family =="RedHat"
   - name: i want start webserver on redhat nodes
     service:
       name: httpd
-      state: present
+      state: started
       when: ansible_os_family =="RedHat"
  
