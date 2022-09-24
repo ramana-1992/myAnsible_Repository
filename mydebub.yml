@@ -8,7 +8,7 @@
 
   - name: i want to display first task result
     debug:
-       msg: "{{myresult}}"
+      msg: "{{myresult}}"
 
   - name: install git
     apt:
