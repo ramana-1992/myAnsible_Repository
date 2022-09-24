@@ -1,0 +1,11 @@
+---
+- hosts:
+  become: yes
+  tasks:
+  - name: excute linux commnd directly
+    command: hostname -f
+    register: myresult
+  
+  - name: i want to display first task result
+    debug:
+      msg: "{{myresult}}"
