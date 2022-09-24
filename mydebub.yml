@@ -4,3 +4,4 @@
   tasks:
   - name: excute linux commnd directly
     command: hostname -f
+    state: present
