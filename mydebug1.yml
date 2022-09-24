@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.47.150
+- hosts: 172.31.32.157
   become: yes
   tasks:
   - name: excute linux directly
