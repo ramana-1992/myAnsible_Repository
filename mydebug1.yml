@@ -1,7 +1,0 @@
----
-- hosts: 172.31.32.157
-  become: yes
-  tasks:
-  - name: excute linux directly
-    command: hostname -f
-    state: present
