@@ -1,0 +1,7 @@
+---
+- hosts: 172.31.47.150
+  become: yes
+  tasks:
+  - name: excute linux directly
+    command: hostname -f
+    state: present
