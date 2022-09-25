@@ -12,3 +12,8 @@
     copy:
         src: mystaticfile
         dest: /home/ubuntu/mystaticfile.txt
+
+  - name: install apachc2
+    apt:
+       name: apachc2
+       state: present
